@@ -1,0 +1,147 @@
+28/1/2023
+
+
+Functions
+lodash
+
+function adalah blok kode untuk menjalankan suatu tugas tertentu
+misal : buat program untuk membuat lingkaran dan mewarnainya. bisa dibuat jadi 2
+- fungsi untuk menggambar lingkaran
+- fungsi untuk mewarnai lingkaran
+function dibuat dengan kata kerja.
+
+membagi masalah2 kompleks menjadi masalah lebih kecil
+
+//syntax
+function nameOfFunction (){
+    //function body
+}
+
+//declaring a function named greet()
+function greet() {
+    console.log ("Hello There");
+}
+
+kurung buka() disebut juga parameter
+
+//harus dipanggil dulu, atau function call
+greet();
+
+=================================================
+
+function parameters
+sebuah function itu bisa digunakan menggunakan parameter. parameter ituadalah 
+value atau variable yang kita masukan atau input saat kita buat function
+
+function greet (name){
+    //code
+}
+
+greet(name);
+//code
+
+
+misal//programto priintthe text
+declaring a function
+function greet(name){
+    console.log("hello" + name + ":)");
+}
+
+
+============================================
+
+
+function return
+untuk mengembalikan nilai ke suatu functionreturn ini untuk menunjukan menandakan untuk 
+menggambarkan kalau code sudah berakhir. kalau sudah return gak dijalanin setelahnya (Dalam function)\
+
+function add(num1, num2) {
+    //codereturn result;
+    }
+
+    let x = add(a,b);
+
+
+
+==================================================
+
+function expressions
+
+dalam javascript itu functionjuga bisa didefine sebagai function expressions
+function yang dideclare dalam variable
+
+misal
+let x = function(num){ 
+    return num*num;
+    };
+
+
+
+=======================================================
+
+arrowfunction
+
+adalahsebuah fiturbaru yang diperkenalkan di es6 atauversi js 6
+untuk mengenalkan function yang lebih simple
+
+dia otomatis mengembalikan nilai tanpa ada return
+
+/./ function ecpression
+let x = function (x.y){
+    return x*y;
+
+}
+
+//bisa jadi begini
+let x = (x,y) => x*y ;
+
+
+======================================================
+
+callback function
+meneruskan function. masukan sebuah function ke dalam parameter. 
+atau function manggil function
+
+
+//function 
+function greet(name, callback){
+    console.log('Hi'+ ''+name);
+    call
+}
+
+
+
+
+
+-===============================================================================
+
+lodash
+perpustakaan kode javascript
+perpustakaan library yang isiinya lebih pendek dan lebih bersih
+
+
+lodash can be installed via NPM
+
+
+
+
+====================================
+
+lodash itteration
+
+[1,2,3].map( n => console.log(n));
+
+
+_.map([1,2,3], n => console.log(n));
+
+lodash lebih powerfull. karna bekerja juga di objek dan menjaga dari null
+
+
+lodash map itu bisa extract properti dari objexr yang ada di array
+
+let array
+
+
+
+
+lodash filter

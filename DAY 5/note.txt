@@ -1,0 +1,71 @@
+Array dan objek
+
+Array adalah special variable 
+yang dapat menampuyng lebih dari satu value sekaligus.
+
+kalo code congcad, pake backtic dan dollar
+kalo coma itu cuman berlaku di console . log
+
+array method
+push() yaitu menginsert elemen baru pada indeks terakhir array
+car.push('brio');
+
+unshift() untuk menginsert elemen pada indeks 0 dari array
+cars.unshift('brio');
+
+pop() menghapus lemen dari akhir array
+cars.pop();
+
+shift() untuk menghapus elemen dari awal index array
+cars.shift();
+
+array.isArray() untuk mengecek apakah value adalah array
+Array.isArray(cars); outputnya boolean, di sini true
+
+length - mengetahui panjang dari array
+
+
+sampai saat ini belum ada masukin array atau apus array ditengah
+
+array iteration
+
+map() membuat aray yang valuenya mengambil dari array lama
+bisa juga untuk menampilkan semua elemen dari array
+
+filter() bakal membuat array baru dengan semua elemen dan didalamnya
+bisa mention kondisi tertentu
+misalnya elemen cars tadi yang kita get itu cuman tesla aja, 
+atau yang bukan tesla
+
+some() pengecekan seua array. hasilnyta boolean.
+jika salah satu yang ada disitu maka true. 
+kaolo gaada sama sekali false
+
+every () untuk mendetect semua element dalam array itu sama dengan kondisi 
+harus sama semua baru true.
+
+
+includes adalah fungsi untuk ngecek value yang kita masukan kedalam
+parameternya sama atau ngga
+
+
+cars.map((val, i)
+
+pokoknya yang pertama itu valuenya
+i itu indexnya
+
+
+
+object
+yaitu tipe data yang bisa menyimpan banyak value juga, dia pake kurwal {}
+dengan pasangan key: value, key (properti name) itu biasanya string, kalo value bebas.
+
+pembatas antar property yaitu  koma (,)
+
+bisa pake object constructor
+let user= new Object();
+
+atau pake object literal
+let user = {};
+
+

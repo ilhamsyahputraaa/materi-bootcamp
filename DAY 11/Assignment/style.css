@@ -1,0 +1,136 @@
+a{
+    background-color: #00A1C3;
+    transition: all 0.4s;
+    text-decoration: none;
+    padding: 8px 16px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+a:hover{
+    background-color:  #34D1F2 ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 38px 111px 41px rgba(0, 0, 0, 0.05);
+    margin: -20px;
+}
+
+* {
+    margin-block: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.article{
+    width: 500px;
+    background-color: #C7F5FF;
+    transition: all 0.5s;
+    border-radius: 15px;
+    display:flex; 
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 16px;
+    padding: 16px;
+}
+
+.article:hover{
+    background-color: #7EE9FF ;
+}
+
+.articleImage{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.header{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-color: #e0faff;
+    margin-bottom: 128px;
+
+}
+
+.articleList{
+    margin: 0 60px;
+
+}
+
+.row{
+    display:flex; 
+    flex-direction: row;
+
+}
+
+img{
+    border-radius: 15px;
+
+}
+
+.menuNavArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuNav{
+    padding: 8px 16px;
+    margin-right: 16px;
+    background-color: white;
+    color: rgb(168, 168, 168);
+
+}
+
+article{
+    padding-inline: 60px;
+}
+
+.poin{
+    width: 500px;
+    padding-right: 32px;
+    margin-top: 16px;
+}
+.content{
+    display: flex;
+}
+.articleSide{
+    width: 400px;
+    background-color: #C7F5FF;
+    transition: all 0.5s;
+    border-radius: 15px;
+    display:flex; 
+    justify-content: center;
+    flex-direction: row;
+    margin: 16px;
+    padding: 16px;
+
+}
+.sidearticleImage{
+    width: 100px;
+    padding: 16px;
+    display: flex;
+}
+.sideArticleList {
+    background-color: rgb(239, 250, 255);
+    padding-top: 100px;
+}
+
+.articleContent{
+    padding: 100px 100px;
+    width: 800px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}

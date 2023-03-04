@@ -1,0 +1,49 @@
+DAY 15 bootstrap
+
+framework kerangka kerja atau template
+
+bootstrap also known as twitter blueprint 
+
+dipakai karna mudah untuk buat website responsive
+
+opensource (community base)
+
+viewpaort adalah user visible area of web page
+
+viewport ditemukan ketika sudah ada tablet dan mobile phones
+
+ada di head tag html
+
+cara ngecek
+1. document.documentElement.clientHeight
+2. document.documentElement.ClientWidth
+3. window.innerWidth mengetahui konten di dalam 
+4. window.outerWidth mengetahui panjang window luar
+3. window.innerHeight 
+4. window.outerHeight 
+
+
+untuk web responsive satuannya pake vh atau vw
+
+media quary
+itu berisi rumus2 breakpoin
+breakpoint
+
+breakpoint classinfix dimensions
+x-small none <576px
+small sm >576
+medium md >= 768px
+large lg >=992px
+extra large xl >= 1200px
+extra extra large xxl >=1400
+
+container & Grid
+container adalah sebuah sebutan oleh progremer untuk mendeskripsi kan suatu wadah 
+komponen. 
+
+kalo di bootstrap containre diwajibkan componen 
+
+
+grid class type in bootstrap
+- .[ row | col]
+- .[ row | col] - [sm | md \ lg \ Xl | ccl ]

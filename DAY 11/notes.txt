@@ -1,0 +1,40 @@
+DAY 11
+
+Ordered list ol
+unordered list ul
+description list dl
+list li
+
+unordered list (tidak terurutan) ul
+disc
+circle
+square
+none
+
+
+html table
+<table> tag pembuka dalam membuat table
+<thead> untuk membuat kepala table
+<tbody membuat body
+<tr> membuat table row
+<td> table data
+
+
+
+html form
+untuk membuat suatu interaksi membuat suatu input
+mendefinisikan nama form
+method, mendefinisikan form akan dikirim dengan metode seperti apa
+action diisi ke url mana
+<input
+<label
+select
+option
+optgroup
+text area
+button
+fieldset
+legen
+datalist
+
+input types

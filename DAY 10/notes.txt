@@ -1,0 +1,92 @@
+
+
+HTML
+tidak digolongkan kedalam bahasa pemrograman
+karena dia tidak memiliki logika di dalamnya
+
+fungsinya untuk membuat suatu halaman web
+
+
+struktur sintaks HTML
+<!DOCTYPE html> untuk mendeklarasikan bahwa itu dokumen html 5
+
+<html></html>
+kode dasar kepda
+
+
+tag
+perintah untuk awalan intruksi yang nantinya
+akan dibaca web brrowser
+
+elemen
+merupakan proses keseluruhan kode dibuka dan ditutup oleh tag
+<></>
+
+attributes
+informasi atau perintah tambahan
+
+jenisjenis
+<> </>
+
+</> self closing tag
+
+<> empty element
+
+
+trick dalam vscode
+awalnya selalu buka index.html
+atau ketik "! lalu tab"
+
+=======================================
+
+Semantic & Non - Semantic
+
+semantic 
+tag elemen html yang sekarang memiliki arti atau makna
+contoh semantic
+article, header, section, body
+
+
+non semantic
+gak memiliki arti di tagnya
+contoh <div> <span>
+lebih oldschool karena bisa lebih distyling 
+
+
+=====================================
+
+block element
+elemen yang memaksa untuk suatu komponen untuk lebarnya 100% dari lebar komponen
+
+
+inline element
+bisa lanjut secara horizontal untuk bisa disusun
+
+
+
+===================
+yang gapake opening dan closing tag itu akan default dianggap sebuah pemrograman
+===================
+
+
+nested element
+satu elemen mengandung atau berisi 1 atau bahkan banyak elemen
+
+
+=============
+
+text element
+
+
+=============
+
+
+hyperlink itu membuat suatu text atau gambar bisa menuju tempat lain
+
+
+
+=============
+
+html media
+
+iframe itu menampilkan website lain ke dalam website kita

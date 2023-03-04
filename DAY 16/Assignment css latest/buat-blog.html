@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Blog</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        form {
+            padding-top: 128px;
+            width: 800px;
+            padding: 64px;
+            background-color: white;
+            border-radius: 15px;
+        }
+        
+        .button {
+            background-color: #00A1C3;
+            transition: all 0.4s;
+            text-decoration: none;
+            padding: 8px 16px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            border: 0px;
+        }
+        
+        .button:hover {
+            background-color: #34D1F2;
+        }
+        
+        input {
+            width: 800px;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 64px;
+        }
+        
+        body {
+            background-color: rgb(249, 249, 249);
+        }
+    </style>
+</head>
+
+<body>
+    <nav style="padding: 16px;">
+        <div class="logoNavArea">
+            <img alt=t humbnail style="margin-right: 16px; " src="src/logo-dibimbing.webp">
+
+        </div>
+        <div class="menuNavArea">
+            <a href="index.html" class="menuNav"> Home </a>
+            <a href="buat-blog.html" class="menuNav"> Buat Blog</a>
+            <a href="https://www.linkedin.com/in/ilhamsyah-putra-9293a2186/" class="menuNav" target="_blank"> About Me </a>
+        </div>
+
+    </nav>
+
+    <div class="content">
+        <form name="form-penulisan-blog" style="padding-left: 64px;">
+            <h4>Tulis Blog</h4>
+            <div>
+                <label>Judul</label><br>
+                <input type="text" name="inputNama" placeholder="Tulis Judul" /><br/> <br/>
+            </div>
+
+            <div>
+                <label>Author</label><br>
+                <input type="text" name="inputNama" placeholder="Penulis" /><br/> <br/>
+            </div>
+
+            <div>
+                <label for="myfile"> Upload Thumbnail: </label> <br>
+                <input type="file" id="myfile" /> <br/> <br/>
+
+            </div>
+
+
+            <div style="
+            display: flex;
+            flex-direction: column; width: 800px;">
+                <label> Tulis Artikel</label><br>
+                <textarea rows="10"> Tulis di sini </textarea><br/> <br/>
+            </div>
+
+
+            <input type="button" value="Save" style="background-color:#ffffff; color: #00A1C3; border: solid 1px #00A1C3;" class="button" />
+            <input type="button" value="Publish" class="button" />
+    </div>
+
+</body>
+
+<footer style="margin-top: 64px;"> Ilhamsyah Putra | Bootcamp Front End Web Developer batch 12</footer>
+
+</html>

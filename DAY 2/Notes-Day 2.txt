@@ -1,0 +1,66 @@
+algoritma
+urutan atau langkah untuk memecahkan suatu masalah logikal dan sistematis
+urutan logis dan masuk akal pengambilan keputusan untuk memecahkan masalah
+
+algoritma dan pseudocode
+desc: adalah algoritma yang ditulis dengan bahasa sehari2- semua kalimatnya ditulis sistematik, jelas, terbatas dan berurutan
+
+psudocode (kode semu)
+penulisan deskripsi pemrograman cara informal yang tidak memerlukan syntax bahasa apapun, atau pertimbangan teknoilogi lain
+
+
+
+flow chart
+proses alur atau diagram 
+
+
+membuat algoritma untuk memilih angka terbesar dari 3 angka, dengan angka yg berbeda
+
+desc
+1. input num1, num2, num3
+2. Declar max is 0
+3. if num1 is greater than equals num2 and num 1 is greater than equals num3, set the max is num1
+4. Otherwise if num is greater than equals num1 and num2 is greater than equals num2, set the max is num2,
+5. otherwise set the max is num3
+
+
+input num1,num2, num3
+declare max,-0
+
+if (num1>=num2&& num1>=num3) then
+    max<-num1
+
+else if (num2>=num1 && num2>= num3) then
+    max <- num3
+
+print max
+
+
+
+Variable
+adalah nama yang merepresentasikan sebuah value. tempat menyimpan sebuah value. 
+bisa jadi wadah untuk menyimpan sesuatu
+variable - dynamic typing
+maksudnya gimana sih, jadi pada saat membuat var, 
+
+misal
+
+let message= Hello World; yaitu tipe data teks atau string
+var message-1,2,3;
+
+bisa aja karna kalo misal diganti tipe data string/number, bisa aja, itulah kenapa disebut dynamic typing
+
+variable itu ada 3,
+let, var, const
+better pake let
+kalo var itu jadul, dah banyak gak dipake
+
+const itu nilai datanya gabakal bisa diubah, data mutlak
+contoh let,
+message yang bisa diubah
+
+contoh const itu seperti birthday, gak berubah
+
+pokoknya si const nih gabisa di asign ulang
+
+image.png

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan HTML</title>
+</head>
+
+
+<body>
+    <form name="form-pendaftaran">
+        <h4>Form Pendaftaran</h4>
+        <label>Nama :</label>
+        <input type="text" name="inputNama" placeholder="Tolong masukkin nama"/><br>
+        <label> Password :</label>
+        <input type="password" name="inputPassword" placeholder="Tolong masukkin Password"/><br/> <br/>
+        
+        <label for="myfile"> Select a file :</label> 
+        <input type="file" id="myfile"/> <br/> <br/>
+        
+        
+        <label>Gender</label><br>
+        <input type="Radio" name="gender" value="Male"> Male <br>
+        <input type="Radio" name="gender" value="Female"> Female <br/> <br/>
+
+
+        <label>Transportation</label><br>
+        <input type="checkbox" value="bike" name="vehicle"/> <label>Bike</label><br>
+        <input type="checkbox" value="bike" name="vehicle"/> <label>Bus</label><br>
+        <input type="checkbox" value="bike" name="vehicle"/> <label>Taxi</label><br/> <br/>
+        
+        <label> About Me</label><br>
+        <textarea rows="10"> Tulis di sini </textarea><br/> <br/>
+        
+        <label>Pet</label> <br>
+        <select>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="fish">Fish</option>
+        </select><br/> <br/>
+
+        <input type="button" value="ini Button"/>
+        <input type="submit" value="submit"/>
+
+    </form>
+    
+    <br/> <hr/>
+
+    <table border="1" cellpadding="5">
+        <h4>Belajar Table</h4>
+        <tr>
+            <th> Judul Header 1</th>
+            <th> Judul Header 2</th>
+            <th> Judul Header 3</th>
+            <th> Judul Header 4</th>
+        </tr>
+        <tr>
+            <td rowspan="3"> Baris 1 & 2 - kolom 1</td>
+            <td> Baris 1 - kolom 2</td>
+            <td> Baris 1 - kolom 3</td>
+            <td> Baris 1 - kolom 4</td>
+        </tr>
+        <tr>
+            <td colspan="2"> Baris 2 - kolom 2 & 3</td>
+            <td> Baris 2 - kolom 4</td>
+        </tr>
+        <tr>
+            <td colspan="3"> Baris 2 - kolom 2 & 3</td>
+        </tr>
+    </table>
+    
+    <br/> <hr/>
+
+    <h2>Description List</h2>
+    <dl>
+        <dt> Coffee</dt>
+        <dd> Black Hot Drink</dd>
+        <dd>With Sugar</dd>
+        <dt> Milk</dt>
+        <dd>- White Cold Drink</dd>
+    </dl>
+
+    <br/> <br/>
+
+    <ul type="disc">
+        <li> Windows 
+            <ul>
+                <li> Windows Vista</li>
+                <li> Windows XP
+                    <ul>
+                        <li>Windows XP Home</li>
+                        <li>Windows XP Ultimate</li>
+                    </ul>
+                </li>
+                <li> Windows 7</li>
+            </ul>
+        </li>
+        <li> Linux 
+            <ol>
+                <li> Redhat</li>
+                <li> Ubuntu</li>
+            </ol>
+        </li>
+        <li> Ios 
+            <ul>
+                <li>Snow Leopard</li>
+            </ul>
+        </li>
+    </ul>
+    <ul type = "circle">
+        <li> Windows </li>
+        <li> Linux </li>
+        <li> Ios </li>
+    </ul>
+    <ul type="square">
+        <li> Windows </li>
+        <li> Linux </li>
+        <li> Ios </li>
+    </ul>
+    <ul type="none">
+        <li> Windows </li>
+        <li> Linux </li>
+        <li> Ios </li>
+    </ul>
+
+    <br/> <br/>
+    
+    <ol>
+        <li> Alfa </li>
+        <li> Beta </li>
+        <li> Charlie </li>
+    </ol>
+    <ol type="A">
+        <li> Alfa </li>
+        <li> Beta </li>
+        <li> Charlie </li>
+    </ol>
+    <ol type="a">
+        <li> Alfa </li>
+        <li> Beta </li>
+        <li> Charlie </li>
+    </ol>
+    <ol type="I">
+        <li> Alfa </li>
+        <li> Beta </li>
+        <li> Charlie </li>
+    </ol>
+    <ol type="i">
+        <li> Alfa </li>
+        <li> Beta </li>
+        <li> Charlie </li>
+    </ol>
+
+</body>
+</html>

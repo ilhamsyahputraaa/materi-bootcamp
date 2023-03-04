@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 CSS 1</title>
+    
+    <!-- Internal Style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500&display=swap" rel="stylesheet">
+
+    <!-- External Style-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <!-- Internal Style-->
+    <style>
+        /* class selector*/
+        .bgPink {
+            background-color: pink;
+            color: purple;
+        }
+
+        /* ID selector*/
+        #bgBlue{
+            background-color: aqua;
+            color: teal;
+        }
+        
+        /* tag selector*/
+        h2 {
+            background-color: orangered;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Inline Style-->
+    <h1 style="Background-color: black; color: white;"> Ilhamsyah Putra</h1>
+    <h1 class="bgPink">Monica Aurellia</h1>
+
+    <h1 class="bgPink">Ima Nandasari</h1>
+    <h1 id="bgBlue">Ardi Wiranto</h1>
+    <h1 id="bgBlue">Ilhamsyah Putra</h1>
+    <!-- ID Selector not recommended to be used more than once-->
+
+    <h2> Izhar Muhamad</h2>
+    <h2> Sahlan</h2>
+    <h2> Istifaroh</h2>
+    <h2> Yasyir</h2>
+    <h2> Rheza</h2>
+
+    <input type="text" />
+    <input type="color" />
+    <input type="checkbox" />
+    <input type="password" />
+
+    <p style="text-align: justify;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <!--List Style Position Inside-->
+    <ul style="list-style-position: inside; list-style-image:url(cursor-hand-icon.webp); list-style-type: disclosure-closed; ">
+        <li>Annisa Jema</li>
+        <li>Muhammad Gusti Eka</li>
+        <li>Andri Anggoro</li>
+        <li>Muhammad Rafi</li>
+        <li>Elang Maulana</li>
+    </ul>
+
+    <!--List Style Position Outside-->
+    <ul>
+        <li>Annisa Jema</li>
+        <li>Muhammad Gusti Eka</li>
+        <li>Andri Anggoro</li>
+        <li>Muhammad Rafi</li>
+        <li>Elang Maulana</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,17 @@
+layout
+
+floats
+biasanya ddipake di paragraph, valuesnmya nmone
+
+position
+behavior sebuah elemen
+
+
+flexboxfroggy.com
+
+display grid
+cssgridgarded.com
+css-trick.com/snippet/css/complete-guide-grid
+grid.layoutit.com
+
+display

@@ -1,0 +1,14 @@
+        /* attributes selector*/
+        input [type=text], input[type=password] {
+            padding: 50px;
+        }
+
+        /* Universal selector*/
+        * {
+            font-family: 'raleway', sans-serif;
+            font-weight: 500;
+            line-height: 32px;
+            text-align: left;
+        }
+
+        

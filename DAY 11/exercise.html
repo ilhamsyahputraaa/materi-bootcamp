@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Day 11</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;   border-collapse: collapse; width: 100%;
+        }
+        
+        td, th {
+          border: 2px solid black;  text-align: center;  padding: 8px;
+        }
+        
+        label {  font-weight: bold; }
+        
+        .field-group{  margin-bottom: 2vh; }
+        </style>        
+</head>
+<body>
+    <table border="1" cellpadding="5">
+        <h4>Students Data</h4>
+        <tr>
+            <th colspan="2"> Nama </th>
+            <th> Age (y.o) </th>
+            <th> Hobies </th>
+        </tr>
+        <tr>
+            <td rowspan="2" > Alfred</td>
+            <td rowspan="2"> Chang</td>
+            <td rowspan="2"> 27</td>
+            <td > Play Guitar</td>
+        </tr>
+
+        <tr>
+            <td > Play Basketball</td>
+            <tr>
+                <td rowspan="3" > Allen</td>
+                <td rowspan="3"> Barry</td>
+                <td rowspan="3"> 30</td>
+                <td > Skateboard</td>
+            </tr>
+            <tr>
+                <td > Singing</td>
+            </tr>
+        </tr>
+        
+        <tr>
+            <tr>
+                
+                <td rowspan="2" > Budi</td>
+                <td rowspan="2"> Cikgu</td>
+                <td rowspan="2"> 16</td>
+                <td >Sleep</td>
+            </tr>
+            <tr>
+                
+                <td > Travelling</td>
+            </tr>
+        </tr>
+        <tr>
+            <tr>
+                <td rowspan="2" > Jessica</td>
+                <td rowspan="2"> Truneau</td>
+                <td rowspan="2"> 27</td>
+                <td > Shopping</td>
+            </tr>
+        </tr>
+    </table>
+
+    <br/> <hr/>
+
+    <label>Nama :</label>
+        <input type="text" name="inputNama" placeholder="Input Your First Name"/>
+        <input type="text" name="inputNama" placeholder="Input Your First Name"/><br/>
+
+    
+    <label>Age :</label>
+    <input type="number" name="inputNumber" placeholder="Input your Age"/><br/>
+
+    <label> Hobbies</label><br>
+        <textarea rows="10"> Input Your Hobbies </textarea><br/> <br/>
+
+
+
+</body>
+</html>

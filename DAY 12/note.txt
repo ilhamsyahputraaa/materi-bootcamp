@@ -1,0 +1,61 @@
+CSS part 1
+
+css gabisa berdisi sendiri
+inline : 
+good for small change
+will make code less readable
+cuman berlaku untuk elemen tersebut
+
+internal
+bisa digunain lagi untuk beberapa elemen
+bisa menggunakan css selector
+membuat head menjadi keberatan
+cuman applied di file itu doang
+
+external
+cara manggilnya <link rel="stylesheet" type="text/css" href="style.css" />
+strukturnya rapi
+bisa direuse di banyak <file>
+<page>bisa menggunakan css sekector</page>
+gakbisa diload ketika ada typo
+gabisa diapplied sampe terload dengan penuh
+
+h1{
+    color : gray;
+    padding: 20px; //declaration *kalo 22nya declaration 
+}
+
+h1 selector
+color propertu
+gray value
+
+
+css selector
+- class selector
+- ID selector 
+- tag selector
+- attribute selector
+- universal selector
+
+class
+bisa dipake berkali2
+
+ID
+kalo mau spesific bisa pake ini
+gabisa dipake berkali2
+
+tag selector (h1 contohnya)
+berguna untuk menggunakan style yang sama di page tersebut
+jarang digunakan
+
+
+css specificity
+
+hierarchy :
+1. inline
+2. ID selector
+3. Class Selector, Attribute Selector
+4. Tag Selector
+5. Universal Selector
+
+if conflict, applied last style

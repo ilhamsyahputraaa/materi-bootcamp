@@ -1,0 +1,38 @@
+Search
+
+- sequencial search/ linear search
+ adalah pencarian data dengan metode pencarian 
+langsung
+
+proses pencocokannya dilakukan secara berururtan
+
+
+
+==================================================
+
+
+Binary Search
+adalah teknik mencari angka tertentu secara berururtan
+menghilangkan setengah data setiap langkah
+
+pencarian dilakukan setelah mencari median
+
+
+
+
+
+===============================================
+
+
+Sorting
+
+sorting adalah penyortiran data menjadi data yang terurut
+disorting jadi data terkecil menjadi terbesar, biasanya
+
+- bubble sorting 
+proses penyortiran yang berangsur angsur 
+secara sederhana algoraitmanya dapart didefinisikan sebaga
+pengurutan dengan cara penukaran data satu dengan data sebelahnya
+
+
+- selection sorting

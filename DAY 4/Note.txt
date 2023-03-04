@@ -1,0 +1,43 @@
+Conditioning
+kondisi pemilihan
+if (condition){
+    //block code to be execute if the condition is true
+}
+else {
+    //block code to be execute if the condition is false
+}
+else if
+
+ternary Operator : 
+bentuk lain dengan pemilihan bentuk if else.
+digunakan jika hanya ada satu baris code
+
+Switch Case 
+
+let expression = x;
+switch(expression)
+ case x:
+   // code block
+   break;
+ case 
+
+
+Looping
+menjalankan blok kode yang kita mau secara berkali2
+
+for (begin; condition; step) {
+    // loop body
+}
+
+
+while 
+- dia akan evaluasi dari kondisi dalam syntas
+- jika kondisinya true maka kode akan dijalankan
+
+
+do while
+- dia akan do, menjalankan code body, baru dievaluasi
+- jika kondisi dievaluasi dan true, maka body loop akan dieksekusi lagi
+
+
+pharseInt itu untuk mengconvert string to number

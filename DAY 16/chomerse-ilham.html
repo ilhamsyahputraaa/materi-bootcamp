@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chomerce</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+    <!-- Work sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Internal Style -->
+    <style>
+        * {
+            font-family: 'Work Sans', sans-serif;
+        }
+        
+        .signin {
+            padding: 24px;
+            margin: 20px;
+            color: #000032;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 29px;
+            border-radius: 15px;
+        }
+        
+        .pb_41 {
+            padding-bottom: 41px;
+        }
+        
+        .input-email {
+            border: 1.5px solid #000032;
+            border-radius: 8px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            padding: 12px 20px;
+            /* identical to box height */
+            /* White/White 30 - #B3B3B3 */
+            color: #B3B3B3;
+        }
+        
+        .or_text {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            /* Black/Black 80 - #333333 */
+            color: #333333;
+        }
+        
+        .mt_24 {
+            margin-top: 24px;
+        }
+        
+        .button-group {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+        }
+        
+        .btn_sosmed {
+            background: #F2F2F2;
+            border-radius: 4px;
+        }
+        
+        .btn_signin {
+            height: 51px;
+            background: #F6A973;
+            border-radius: 8px;
+        }
+        
+        .btn_signup {
+            text-decoration: none;
+            color: #F6A973;
+            height: 51px;
+        }
+        
+        .btn_signup:hover {
+            color: #000032;
+        }
+        
+        .navbar-brand,
+        .navbar-brand>span {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 49px;
+            color: #F6A973;
+        }
+        
+        .btn-close-signin-modal {
+            position: relative;
+            left: 420px;
+            top: 10px;
+        }
+        
+        .breadcrumb-item a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    Chom<span style="color:#000032 ;">erce</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+                <!-- Masukin untuk hamburger Icon -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Search Bar -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
+                    <!-- Menu Item -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signInModal">Sign In</a>
+                        </li>
+                        <li class="nav-item">Cart</li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Alert -->
+        <div class="alert alert-success" role="alert">
+            Our New Arrival in March 2023, check it out!
+        </div>
+
+        <!-- Breadcrumps -->
+        <div>
+            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider:'>';">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Carousel -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/discovery-desktop/promo/2023/02/13/937878ba-548f-4aa6-bcce-ac7dedff0261-1676264310973-f7e6b5370bd6bfc1553d02c765c3f37f.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/discovery-desktop/promo/2023/02/20/a4e6ac14-f415-417c-a816-060cd50055c4-1676874652531-e4ac69be268fff9c4664ed547e097128.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/discovery-desktop/promo/2023/02/14/5e87467d-d274-4824-a999-2017c14d3366-1676347470136-09d4c2a47737493dd3ec60aac9128ff4.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- card -->
+        <div class="container-fluid d-flex justify-content-center gap-3">
+            <div class="card" style="width: 18rem; border: none;">
+                <img src="src/image 1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Joystick</h5>
+                    <button type="button" class="btn btn-outline-warning" style="border-radius:20px;">Rp 24.000,-</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; border: none;">
+                <img src="src/image 10.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Wireless Charging</h5>
+                    <button type="button" class="btn btn-outline-warning" style="border-radius:20px;">Rp 25.000</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; border: none;">
+                <img src="src/image 13.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">TV LED</h5>
+                    <button type="button" class="btn btn-outline-warning " style="border-radius:20px;">Rp 25.000</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; border: none;">
+                <img src="src/image 14.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mouse</h5>
+                    <button type="button" class="btn btn-outline-warning" style="border-radius:20px;">Rp 25.000</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> -->
+                    <button type="button" class="btn-close btn-close-signin-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="signin">
+
+
+                        <div class="pb_41">Sign In</div>
+
+                        <div>
+                            <input class="form-control input-email" type="email" id="exampleFormControlInput1" placeholder="Enter phone number or email address">
+                        </div>
+
+                        <!-- <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label or_text" for="flexCheckDefault">
+                              Keep Me Sign In
+                            </label>
+                        </div>
+                
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked disabled>
+                            <label class="form-check-label or_text" for="flexCheckDefault">
+                              Keep Me Sign In
+                            </label>
+                        </div> -->
+
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center mt_24">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="margin: 0px;">
+                            <label class="form-check-label or_text" for="flexSwitchCheckDefault">Keep Me Sign In</label>
+                        </div>
+
+                        <div class="d-flex flex-column mt_24" style="gap:12px">
+                            <button type="button" class="btn btn-warning btn_signin">Sign In</button>
+                            <button type="button" class="btn btn-link btn_signup">Sign Up</button>
+                        </div>
+
+
+                        <div class="or_text mt_24" style="text-align: center;">Or</div>
+                        <div class="d-flex flex-column mt_24" style="gap: 12px">
+                            <button type="button" class="btn btn-light btn_sosmed">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                    <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                                  </svg>
+                                  Continue With Google</button>
+                            <button type="button" class="btn btn-light btn_sosmed">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                  </svg>
+                                  Continue With Facebook</button>
+                            <button type="button" class="btn btn-light btn_sosmed">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                                  </svg>Continue With Apple</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

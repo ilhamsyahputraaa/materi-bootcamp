@@ -1,0 +1,26 @@
+js bisa digunakan sebagai bahasa oemrograman karena dapat digunakan untuk fungsi2 tertemtu
+
+Dom document object Model
+
+
+syntax css, bagaiamana kita tau kalau syntax itu tersedia di css
+
+html itu seperti rangka
+css mempercantik diri kita, seperti rambut, kulit
+javascript seperti fungsi2 dalam tubuh kita, melihat, mendengar, bergerak
+
+
+hypertex language
+yaitu markup language, bahasa rangka yaitu membuat kerangka
+
+html membuat kerangka tampilan
+xml membuat memetakan data
+
+FE : presentation layer
+
+
+
+Tools yang digunakan dalam mengimplementasikan bahasa pemrograman untuk penmgembangan suatu software
+VSCode
+InteliJ untuk bahasa java
+Sublime Text bisa digunakan beragam bahasa poemrograman

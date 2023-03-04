@@ -1,0 +1,67 @@
+class
+
+Object OOP
+
+==============================================================
+
+
+class
+adalah salah satu fitur baru di es6. bareng sama arrow function
+class adalah blueprint atau rangkaian atau template dari object. 
+bisa buat object juga dari class.
+
+bisa juga disebut prototep atau sketch dari rumah. mengandung detail dari ukuran,.
+lantai, pintu. rumahnya itu object
+
+intinya template
+
+Pascal case (setiap hurup pertama dari kata pertama harus hurup besar)
+
+syntax
+
+//constructor function
+function Person(){
+    this.name = 'John',
+    this.age = 23
+}
+
+// creating a class
+class Person {
+    constructor (name){
+        this.name = name; //instansiasinya pake new
+    }
+}
+
+===============================================================
+
+
+
+OOP
+Object oriented programing
+
+medel pemrogramaan yang mengatur model dan datanya
+
+
+ada access modifier
+ada juga fisibilitas atau konsep yang mengatur tingkat akses kedalam propertis
+atau metod di objek
+
+yang dipelajari
+
+private 
+cuman bisa diakses dengan function/ class. dengan kata lain object instansinya tidak bisa menggunakan
+properti atauy method
+
+public 
+ketika properti atau method  bisa diakses di luar function/class. dengan menggunakan this
+
+
+
+========================================
+
+4 pillars of OOP
+encapsulation proses pembungkusan variable atau method
+inheritance menurunkan atau mewariskan sifat atau properti method terhadap class lain atau anaknya
+polymorphism kemampuan untuk membuat variable, fungsi, objek yang memiliki banyak bentuk/role
+abstraction teknik penyembunyian detail tertentu dari suatu objek atau class dan haya menampilkanfunc
+penting dari objeknya
