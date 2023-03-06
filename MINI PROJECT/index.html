@@ -18,12 +18,60 @@
             padding: 64px;
         }
 
+        .navbar{
+            background-color: aquamarine;
+        }
+
+        .text-container{
+            background-color: aqua;
+            width: 100%;
+            padding: 16px;
+            transition-duration: 0.5s;
+            height: relative;
+            background: rgba(87, 87, 87, 0.79);
+            backdrop-filter: blur(2px);
+            display: flex;
+            flex-direction: column;
+            height: 30%;
+            
+            text-align: center;
+        }
+
+        .card:hover .text-container{
+            height: 100%;
+            background: rgba(87, 87, 87, 0.79);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card-img-overlay{
+            padding: 0;
+        }
+
+        .card-img{
+            transition-duration: .5s;
+            scale: 100%;
+        }
+
+        .card{
+            overflow: hidden;
+        }
+
+        .card:hover .card-img {
+            transform: scale(120%);
+            transition-duration: 0.5s;
+        }
+
     </style>
 
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div >
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -52,7 +100,8 @@
           </nav>
 
         <!-- Carousel Header -->
-        <section>
+        <section id="header-carousel">
+            <div>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -61,9 +110,9 @@
                 </div>
                 <div class="carousel-inner">
                     <!-- carousel 1 -->
-                    <div class="carousel-item active" data-bs-interval="5000" style="background-color: aqua;">
+                    <div class="container-fluid carousel-item active" data-bs-interval="5000" style="background-color: aqua;">
                         <div class="row d-flex align-items-center header-content">
-                            <div class="col-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <h1>Ini Judul Websitenya untuk dipajang Slogan</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                 <button class="">View more</button>
@@ -72,9 +121,9 @@
                         </div>
                     </div>
                     <!-- carousel 2 -->
-                    <div class="carousel-item active" data-bs-interval="5000" style="background-color: rgb(65, 249, 23);">
+                    <div class="container-fluid  carousel-item active" data-bs-interval="5000" style="background-color: rgb(65, 249, 23);">
                         <div class="row d-flex align-items-center header-content">
-                            <div class="col-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <h1>Ini Judul Websitenya untuk dipajang Slogan</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                 <button class="">View more</button>
@@ -83,9 +132,9 @@
                         </div>
                     </div>
                     <!-- carousel 3 -->
-                    <div class="carousel-item active" data-bs-interval="5000" style="background-color: rgb(255, 0, 251);">
+                    <div class="container-fluid carousel-item active" data-bs-interval="5000" style="background-color: rgb(255, 0, 251);">
                         <div class="row d-flex align-items-center header-content">
-                            <div class="col-6">
+                            <div class="col-md-6 col-sm-12">
                                 <h1>Ini Judul Websitenya untuk dipajang Slogan</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                 <button class="">View more</button>
@@ -103,12 +152,14 @@
                   <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            </div>
+
         </section>
 
 
         <!-- History Watch -->
         <section id="continue-watching" class="mt-5 mb-5 overflow-hidden">
-            <div>
+            <div class="container-xl">
                 <!-- Head -->
                 <div class="row mb-3">
                     <div class="col-9">
@@ -116,59 +167,91 @@
                             Continue Watching
                         </h5>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 d-flex justify-content-end">
                         <button>Show All</button>
                     </div>
                 </div>
                 <!-- Product Card -->
                 <div class="column d-flex justify-content-start col-12 gap-2">
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
                         <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-container" >
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <p class="card-text col-12">View More</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
                         <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-container" >
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <p class="card-text col-12">View More</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
                         <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-container" >
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <p class="card-text col-12">View More</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
                         <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-container" >
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <p class="card-text col-12">View More</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
                         <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-container" >
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <p class="card-text col-12">View More</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
                         <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-container" >
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <p class="card-text col-12">View More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-container" >
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <p class="card-text col-12">View More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-container" >
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <p class="card-text col-12">View More</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="text-container" >
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <p class="card-text col-12">View More</p>
+                            </div>
                         </div>
                     </div>
 
