@@ -152,8 +152,12 @@
             background-repeat: none;
         }
 
-        .coming-soon-product{
-            justify-content: start;
+        .card-container{
+            padding: 8px;
+        }
+
+        .card-horizontal{
+            height: 100%;
         }
 
     </style>
@@ -416,10 +420,13 @@
                     </div>
                 </div>
 
-                <!-- Product Card -->
-                <div class="column d-flex coming-soon-product gap-4 col-12 position-relative me-3 ms-3">
-                    <div class="card bg-dark text-white col-3">
-                        <img src="src/tenet.png" class="card-img" alt="...">
+                <!-- Coming soon Card 1 -->
+                <div class="column d-flex position-relative me-3 ms-3">
+                    <!-- coming soon 1 -->
+
+                    <div class="card-container  col-9">
+                        <div class="card bg-dark text-white card-horizontal">
+                        <img src="src/Poster.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
                             <div class="rate-label position-absolute end-0"> Action</div>
                             <div class="text-container" >
@@ -430,10 +437,13 @@
                                 <h5 class="card-title col-12">Tenet</h5>
                                 <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
                             </div>
+                        </div>
                         </div>
                     </div>
 
-                    <div class="card bg-dark text-white col-3 ">
+
+                    <div class="card-container  col-3">
+                        <div class="card bg-dark text-white">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
                             <div class="rate-label position-absolute end-0"> Action</div>
@@ -445,10 +455,19 @@
                                 <h5 class="card-title col-12">Tenet</h5>
                                 <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
                             </div>
+                        </div>
                         </div>
                     </div>
 
-                    <div class="card bg-dark text-white col-3">
+                    
+                </div>
+                
+
+                <!-- Coming soon Card 2 -->
+                <div class="column d-flex position-relative me-3 ms-3">
+                    <!-- coming soon 1 -->
+                    <div class="card-container  col-3">
+                        <div class="card bg-dark text-white">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
                             <div class="rate-label position-absolute end-0"> Action</div>
@@ -460,10 +479,13 @@
                                 <h5 class="card-title col-12">Tenet</h5>
                                 <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
                             </div>
+                        </div>
                         </div>
                     </div>
 
-                    <div class="card bg-dark text-white col-3">
+                    <!-- coming soon 2 -->
+                    <div class="card-container  col-3">
+                        <div class="card bg-dark text-white ">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
                             <div class="rate-label position-absolute end-0"> Action</div>
@@ -476,8 +498,45 @@
                                 <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
                             </div>
                         </div>
+                        </div>
                     </div>
-                                       
+
+                    <!-- coming soon 3 -->
+                    <div class="card-container  col-3">
+                        <div class="card bg-dark text-white ">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- coming soon 4 -->
+                    <div class="card-container  col-3 ">
+                        <div class="card bg-dark text-white">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
                 </div>
 
             </div>
