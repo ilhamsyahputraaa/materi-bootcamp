@@ -71,6 +71,26 @@
     font-size: 10px;
 }
 
+/* Giant Card */
+.giant-card {
+    overflow: hidden;
+    border-radius: 10px;
+    scale: 100%;
+}
+
+.giant-card:hover {
+    transition-duration: .5s;
+    z-index: 10;
+    scale: 100%;
+}
+
+.on-cinema-card{
+    height: 50%;
+}
+.carousel-inner-soon{
+    height: 100%;
+}
+
 
 
 /* Card Image */
@@ -80,7 +100,7 @@
 
 .card-img {
     transition-duration: .5s;
-    scale: 100%;
+    scale: 105%;
 }
 
 .card:hover .card-img {
@@ -150,6 +170,9 @@
     transition-duration: 1.5s;
 }
 
+.carousel-soon{
+    align
+}
 
 
 
@@ -178,6 +201,10 @@
     }
 
     .info-label img {
+        display: none;
+    }
+
+    .coming-soon-hide{
         display: none;
     }
 

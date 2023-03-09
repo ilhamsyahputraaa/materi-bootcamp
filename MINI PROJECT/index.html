@@ -47,8 +47,8 @@
 
         <!-- Carousel Header -->
         <section id="header-carousel">
-            <div>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <!-- indicator Carousel -->
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -90,7 +90,6 @@
                     </div>
                 </div>
                 
-            </div>
             </div>
 
         </section>
@@ -245,27 +244,54 @@
 
                 <!-- Coming soon Card 1 -->
                 <div class="column d-flex position-relative me-3 ms-3">
-                    <!-- coming soon 1 -->
-
-                    <div class="card-container  col-9">
-                        <div class="card bg-dark text-white card-horizontal">
-                        <img src="src/Poster.png" class="card-img" alt="...">
-                        <div class="card-img-overlay d-flex align-items-end">
-                            <div class="rate-label position-absolute end-0"> Action</div>
-                            <div class="text-container" >
-                                <div class="info-icons">
-                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
-                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
-                                </div>
-                                <h5 class="card-title col-12">Tenet</h5>
-                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                    <!-- coming soon Horizontal 1 -->
+                    <div id="carouselExampleInterval" class="card-container  col-12 col-md-9 col-sm-12 carousel slide carousel-soon" data-bs-ride="carousel">
+                        <div class="carousel-inner carousel-inner-soon">
+                            <!-- Carousel 1 -->
+                            <div class="carousel-item active card bg-dark text-white card-horizontal giant-card " data-bs-interval="3000">
+                                    <img src="src/Poster.png" class="card-img" alt="...">
+                                        <div class="card-img-overlay d-flex align-items-end">
+                                            <div class="rate-label position-absolute end-0"> Action</div>
+                                            <div class="text-container" >
+                                                <div class="info-icons">
+                                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                                </div>
+                                                <h5 class="card-title col-12">Horizontal</h5>
+                                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                                            </div>
+                                        </div>
+                            </div>
+                            <!-- Carousel 1 -->
+                            <div class="carousel-item active card bg-dark text-white card-horizontal giant-card" data-bs-interval="3000">
+                                <img src="src/Poster.png" class="card-img" alt="...">
+                                    <div class="card-img-overlay d-flex align-items-end">
+                                        <div class="rate-label position-absolute end-0"> Action</div>
+                                        <div class="text-container" >
+                                            <div class="info-icons">
+                                                <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                                <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                            </div>
+                                            <h5 class="card-title col-12">Horizontal</h5>
+                                            <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
-                        </div>
+            
+                      <!-- button -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                     </div>
 
-
-                    <div class="card-container  col-3">
+                    <!-- coming soon Horizontal 2 -->
+                    <div class="card-container coming-soon-hide  col-3">
                         <div class="card bg-dark text-white">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
@@ -281,15 +307,13 @@
                         </div>
                         </div>
                     </div>
-
-                    
                 </div>
                 
 
                 <!-- Coming soon Card 2 -->
-                <div class="column d-flex position-relative me-3 ms-3">
+                <div class="column d-flex position-relative me-3 ms-3 coming-soon-hide">
                     <!-- coming soon 1 -->
-                    <div class="card-container  col-3">
+                    <div class="card-container  col-3 coming-soon-hide">
                         <div class="card bg-dark text-white">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
@@ -307,7 +331,7 @@
                     </div>
 
                     <!-- coming soon 2 -->
-                    <div class="card-container  col-3">
+                    <div class="card-container  col-3 coming-soon-hide">
                         <div class="card bg-dark text-white ">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
@@ -325,7 +349,7 @@
                     </div>
 
                     <!-- coming soon 3 -->
-                    <div class="card-container  col-3">
+                    <div class="card-container  col-3 coming-soon-hide">
                         <div class="card bg-dark text-white ">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
@@ -343,7 +367,7 @@
                     </div>
 
                     <!-- coming soon 4 -->
-                    <div class="card-container  col-3 ">
+                    <div class="card-container  col-3 coming-soon-hide ">
                         <div class="card bg-dark text-white">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
@@ -379,6 +403,27 @@
                     <div class="col-3 d-flex justify-content-end">
                         <button type="button" class="btn btn-warning">View</button>
                     </div>
+                </div>
+                <!-- On Cinema Card 1 -->
+                <div class="column d-flex position-relative me-3 ms-3">
+                    <!--On Cinema Horizontal-->
+                    <div class="col-sm-12 mb-2 on-cinema-card">
+                        <div class=" card bg-dark text-white card-horizontal giant-card ">
+                        <img src="src/Poster.png" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex align-items-end">
+                                <div class="rate-label position-absolute end-0"> Action</div>
+                                <div class="text-container" >
+                                    <div class="info-icons">
+                                        <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                        <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                    </div>
+                                    <h5 class="card-title col-12">Horizontal</h5>
+                                    <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <!-- Product Card -->
@@ -691,6 +736,51 @@
         <!-- footer -->
 
 
+    </div>
+
+    <div id="carouselExampleInterval" class="card-container  col-12 col-md-9 col-sm-12 carousel slide carousel-soon" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Carousel 1 -->
+                <div class="carousel-item active card bg-dark text-white card-horizontal giant-card" data-bs-interval="3000">
+                        <img src="src/Poster.png" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex align-items-end">
+                                <div class="rate-label position-absolute end-0"> Action</div>
+                                <div class="text-container" >
+                                    <div class="info-icons">
+                                        <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                        <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                    </div>
+                                    <h5 class="card-title col-12">Horizontal</h5>
+                                    <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                                </div>
+                            </div>
+                </div>
+                <!-- Carousel 1 -->
+                <div class="carousel-item active card bg-dark text-white card-horizontal giant-card" data-bs-interval="3000">
+                    <img src="src/Poster.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Horizontal</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+          <!-- button -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <!-- Modal -->
