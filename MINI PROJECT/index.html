@@ -152,6 +152,10 @@
             background-repeat: none;
         }
 
+        .coming-soon-product{
+            justify-content: start;
+        }
+
     </style>
 
 </head>
@@ -172,12 +176,12 @@
                 <!-- Menu -->
                 <ul class="navbar-nav col justify-content-center mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="#">Popular</a></li>
-                  <li class="nav-item"></li><a class="nav-link" href="#">Coming Soon</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Recommend</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#coming-soon">Coming Soon</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#on-cinema">On Cinema</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#recomendation">Recommend</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact Us</a></li>
                 </ul>
                 <!-- Button Log In -->
                 <button class="btn btn-outline-success ms-auto" type="submit">Log <Inp></Inp></button>
@@ -237,8 +241,8 @@
 
 
         <!-- Watch List -->
-        <section id="continue-watching" class="mt-5 mb-5 overflow-hidden">
-            <div class="container-xxl pb-4 pt-4 watch-list-slider">
+        <section id="watch-list" class="mt-5 mb-5 overflow-hidden">
+            <div class="container-fluid pb-4 pt-4 watch-list-slider">
                 <!-- Head -->
                 <div class="row mb-3 me-3 ms-3">
                     <div class="col-9">
@@ -398,7 +402,7 @@
         </section>
 
         <!-- Coming Soon -->
-        <section id="continue-watching" class="mt-5 mb-5 overflow-hidden">
+        <section id="coming-soon" class="mt-5 mb-5 overflow-hidden">
             <div class="container-fluid pb-4 pt-4">
                 <!-- Head -->
                 <div class="row mb-3 me-3 ms-3">
@@ -413,8 +417,8 @@
                 </div>
 
                 <!-- Product Card -->
-                <div class="column d-flex justify-content-start col-12 gap-2 position-relative me-3 ms-3">
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                <div class="column d-flex coming-soon-product gap-4 col-12 position-relative me-3 ms-3">
+                    <div class="card bg-dark text-white col-3">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
                             <div class="rate-label position-absolute end-0"> Action</div>
@@ -429,22 +433,7 @@
                         </div>
                     </div>
 
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay d-flex align-items-end">
-                            <div class="rate-label position-absolute end-0"> Action</div>
-                            <div class="text-container" >
-                                <div class="info-icons">
-                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
-                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
-                                </div>
-                                <h5 class="card-title col-12 ">Tenet</h5>
-                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                    <div class="card bg-dark text-white col-3 ">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
                             <div class="rate-label position-absolute end-0"> Action</div>
@@ -459,7 +448,7 @@
                         </div>
                     </div>
 
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                    <div class="card bg-dark text-white col-3">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
                             <div class="rate-label position-absolute end-0"> Action</div>
@@ -474,7 +463,7 @@
                         </div>
                     </div>
 
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                    <div class="card bg-dark text-white col-3">
                         <img src="src/tenet.png" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-end">
                             <div class="rate-label position-absolute end-0"> Action</div>
@@ -488,71 +477,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay d-flex align-items-end">
-                            <div class="rate-label position-absolute end-0"> Action</div>
-                            <div class="text-container" >
-                                <div class="info-icons">
-                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
-                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
-                                </div>
-                                <h5 class="card-title col-12">Tenet</h5>
-                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay d-flex align-items-end">
-                            <div class="rate-label position-absolute end-0"> Action</div>
-                            <div class="text-container" >
-                                <div class="info-icons">
-                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
-                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
-                                </div>
-                                <h5 class="card-title col-12">Tenet</h5>
-                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay d-flex align-items-end">
-                            <div class="rate-label position-absolute end-0"> Action</div>
-                            <div class="text-container" >
-                                <div class="info-icons">
-                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
-                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
-                                </div>
-                                <h5 class="card-title col-12">Tenet</h5>
-                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay d-flex align-items-end">
-                            <div class="rate-label position-absolute end-0"> Action</div>
-                            <div class="text-container" >
-                                <div class="info-icons">
-                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
-                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
-                                </div>
-                                <h5 class="card-title col-12">Tenet</h5>
-                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="button-wrapper position-absolute end-0 top-50 translate-middle-y"><button class="btn-arrow-right "> <img src="src/chevron-right 1.svg" alt=""></button></div>
+                                       
                 </div>
 
             </div>
@@ -560,7 +485,7 @@
 
 
         <!-- On Cinema -->
-        <section id="continue-watching" class="mt-5 mb-5 overflow-hidden">
+        <section id="on-cinema" class="mt-5 mb-5 overflow-hidden">
             <div class="container-fluid pb-4 pt-4">
                 <!-- Head -->
                 <div class="row mb-3 me-3 ms-3">
@@ -721,7 +646,7 @@
         </section>
 
         <!-- Must Watch -->
-        <section id="continue-watching" class="mt-5 mb-5 overflow-hidden">
+        <section id="recomendation" class="mt-5 mb-5 overflow-hidden">
             <div class="container-fluid pb-4 pt-4">
                 <!-- Head -->
                 <div class="row mb-3 me-3 ms-3">
