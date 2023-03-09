@@ -14,8 +14,146 @@
     <!-- Internal Style -->
     <style>
         .header-content{
-            height: 60vh;
+            height: 100vh;
             padding: 64px;
+        }
+
+
+        
+        .navbar{
+            background-color: aquamarine;
+        }
+
+        .text-container{
+            background-color: aqua;
+            width: 100%;
+            padding: 16px 16px ;
+            transition-duration: 0.5s;
+            background: linear-gradient(360deg, #484848 10.42%, rgba(40, 39, 39, 0) 100%);
+            backdrop-filter: blur(1px);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        .card:hover .text-container{
+            background: linear-gradient(360deg, #484848 0.42%, rgba(40, 39, 39, 0) 100%);
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 16px 16px ;
+        }
+
+        .card-img-overlay{
+            padding: 0;
+        }
+
+        .card-img{
+            transition-duration: .5s;
+            scale: 100%;
+        }
+
+        .card{
+            overflow: hidden;
+            border-radius: 10px;
+            scale: 100%;
+        }
+
+        .card:hover{
+            scale: 110%;
+            transition-duration: .5s;
+            z-index: 10;
+        }
+
+        .card:hover .card-img {
+            transform: scale(120%);
+            transition-duration: 0.5s;
+        }
+
+        .rate-label{
+            top: 16px;
+            margin-inline-end: 16px;
+            background-color: #F8D13B;
+            color: rgb(37, 37, 37);
+            padding: 2px 8px;
+            border-radius: 50px;
+            font-size: 10px;
+        }
+
+        .btn-view {
+            display: none;
+            opacity: 0%;
+            border-radius: 100px;
+        }
+
+        .card:hover .btn-view {
+            display: block;
+            
+            opacity: 100%;
+            transition-duration: 1s;
+            border-radius: 100px;
+        }
+
+        .info-label{
+            opacity: 0;
+            font-size: 10px;
+            margin-right: 8px;
+            color: rgb(231, 231, 231);
+            font-weight: 700;
+        }
+
+        .info-label img{
+            margin-right: 4px;
+            scale: 80%;
+            color: rgb(255, 255, 255);
+        }
+
+        .card:hover .info-label{
+            opacity: 100%;
+            transition-duration: 1.5s;
+        }
+
+        .btn-close{
+            position: absolute;
+            top: 16px;
+            margin-right: 16px;
+        }
+
+        .btn-arrow-right{
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: #F8D13B ;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .button-wrapper{
+            height: 100%;
+            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 98.78%);
+            display: flex;
+            align-items: center;
+            padding: 64px;
+            /* margin-right: -32px; */
+            justify-content: center;
+        }
+
+        .watch-list-slider{
+            overflow: hidden;
+        }
+
+        .header-tenet{
+            background-image: url('./src/Poster.png');
+            background-size: contain;
+            background-repeat: none;
+        }
+
+        .coming-soon-product{
+            justify-content: start;
         }
 
     </style>
@@ -23,7 +161,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div >
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -38,12 +176,12 @@
                 <!-- Menu -->
                 <ul class="navbar-nav col justify-content-center mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                   </li>
-                  <li class="nav-item"><a class="nav-link" href="#">Popular</a></li>
-                  <li class="nav-item"></li><a class="nav-link" href="#">Coming Soon</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Recommend</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#coming-soon">Coming Soon</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#on-cinema">On Cinema</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#recomendation">Recommend</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact Us</a></li>
                 </ul>
                 <!-- Button Log In -->
                 <button class="btn btn-outline-success ms-auto" type="submit">Log <Inp></Inp></button>
@@ -52,7 +190,8 @@
           </nav>
 
         <!-- Carousel Header -->
-        <section>
+        <section id="header-carousel">
+            <div>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -61,9 +200,9 @@
                 </div>
                 <div class="carousel-inner">
                     <!-- carousel 1 -->
-                    <div class="carousel-item active" data-bs-interval="5000" style="background-color: aqua;">
-                        <div class="row d-flex align-items-center header-content">
-                            <div class="col-6">
+                    <div class="container-fluid carousel-item active header-tenet" data-bs-interval="5000" >
+                        <div class="row d-flex align-items-center header-content header-tenet">
+                            <div class="col-lg-4 col-sm-12">
                                 <h1>Ini Judul Websitenya untuk dipajang Slogan</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                 <button class="">View more</button>
@@ -72,9 +211,9 @@
                         </div>
                     </div>
                     <!-- carousel 2 -->
-                    <div class="carousel-item active" data-bs-interval="5000" style="background-color: rgb(65, 249, 23);">
+                    <div class="container-fluid  carousel-item active" data-bs-interval="5000" style="background-color: rgb(65, 249, 23);">
                         <div class="row d-flex align-items-center header-content">
-                            <div class="col-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <h1>Ini Judul Websitenya untuk dipajang Slogan</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                 <button class="">View more</button>
@@ -83,9 +222,9 @@
                         </div>
                     </div>
                     <!-- carousel 3 -->
-                    <div class="carousel-item active" data-bs-interval="5000" style="background-color: rgb(255, 0, 251);">
+                    <div class="container-fluid carousel-item active" data-bs-interval="5000" style="background-color: rgb(255, 0, 251);">
                         <div class="row d-flex align-items-center header-content">
-                            <div class="col-6">
+                            <div class="col-md-6 col-sm-12">
                                 <h1>Ini Judul Websitenya untuk dipajang Slogan</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                 <button class="">View more</button>
@@ -94,100 +233,595 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                
             </div>
+            </div>
+
         </section>
 
 
-        <!-- History Watch -->
-        <section id="continue-watching" class="mt-5 mb-5 overflow-hidden">
-            <div>
+        <!-- Watch List -->
+        <section id="watch-list" class="mt-5 mb-5 overflow-hidden">
+            <div class="container-fluid pb-4 pt-4 watch-list-slider">
                 <!-- Head -->
-                <div class="row mb-3">
+                <div class="row mb-3 me-3 ms-3">
                     <div class="col-9">
-                        <h5>
-                            Continue Watching
+                        <h5> 
+                            Watch List
                         </h5>
                     </div>
-                    <div class="col-3">
-                        <button>Show All</button>
+                    <div class="col-3 d-flex justify-content-end">
+                        <button type="button" class="btn btn-warning">View</button>
                     </div>
                 </div>
+
                 <!-- Product Card -->
-                <div class="column d-flex justify-content-start col-12 gap-2">
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-6">
+                <div class="column d-flex justify-content-start col-12 gap-2 position-relative me-3 ms-3">
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
                         <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-6">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4">
-                        <img src="src/tenet.png" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
                         </div>
                     </div>
 
-                    
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12 ">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="button-wrapper position-absolute end-0 top-50 translate-middle-y"><button class="btn-arrow-right "> <img src="src/chevron-right 1.svg" alt=""></button></div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Popular -->
-
         <!-- Coming Soon -->
+        <section id="coming-soon" class="mt-5 mb-5 overflow-hidden">
+            <div class="container-fluid pb-4 pt-4">
+                <!-- Head -->
+                <div class="row mb-3 me-3 ms-3">
+                    <div class="col-9">
+                        <h5> 
+                            Coming Soon
+                        </h5>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end">
+                        <button type="button" class="btn btn-warning">View</button>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="column d-flex coming-soon-product gap-4 col-12 position-relative me-3 ms-3">
+                    <div class="card bg-dark text-white col-3">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-3 ">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-3">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-3">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+                                       
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- On Cinema -->
+        <section id="on-cinema" class="mt-5 mb-5 overflow-hidden">
+            <div class="container-fluid pb-4 pt-4">
+                <!-- Head -->
+                <div class="row mb-3 me-3 ms-3">
+                    <div class="col-9">
+                        <h5> 
+                            On Cinema
+                        </h5>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end">
+                        <button type="button" class="btn btn-warning">View</button>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="column d-flex justify-content-start col-12 gap-2 position-relative me-3 ms-3">
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12 ">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="button-wrapper position-absolute end-0 top-50 translate-middle-y"><button class="btn-arrow-right "> <img src="src/chevron-right 1.svg" alt=""></button></div>
+                </div>
+
+            </div>
+        </section>
 
         <!-- Must Watch -->
+        <section id="recomendation" class="mt-5 mb-5 overflow-hidden">
+            <div class="container-fluid pb-4 pt-4">
+                <!-- Head -->
+                <div class="row mb-3 me-3 ms-3">
+                    <div class="col-9">
+                        <h5> 
+                            Recommend
+                        </h5>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end">
+                        <button type="button" class="btn btn-warning">View</button>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="column d-flex justify-content-start col-12 gap-2 position-relative me-3 ms-3">
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12 ">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark text-white col-lg-2 col-md-3 col-sm-4 col-4">
+                        <img src="src/tenet.png" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <div class="rate-label position-absolute end-0"> Action</div>
+                            <div class="text-container" >
+                                <div class="info-icons">
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </div>
+                                <h5 class="card-title col-12">Tenet</h5>
+                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="button-wrapper position-absolute end-0 top-50 translate-middle-y"><button class="btn-arrow-right "> <img src="src/chevron-right 1.svg" alt=""></button></div>
+                </div>
+
+            </div>
+        </section>
 
         <!-- footer -->
 
 
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
