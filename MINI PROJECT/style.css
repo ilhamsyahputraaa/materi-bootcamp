@@ -1,0 +1,185 @@
+/* Navbar */
+.navbar {
+    background-color: aquamarine;
+}
+
+
+
+/* Header */
+.header-content {
+    height: 100vh;
+    padding: 64px;
+}
+
+.header-tenet {
+    background-image: url('./src/Poster.png');
+    background-size: contain;
+    background-repeat: none;
+}
+
+
+
+/* Card Slider */
+.btn-arrow-right {
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #F8D13B;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.watch-list-slider {
+    overflow: hidden;
+}
+
+.button-wrapper {
+    height: 100%;
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 98.78%);
+    display: flex;
+    align-items: center;
+    padding: 64px;
+    /* margin-right: -32px; */
+    justify-content: center;
+}
+
+
+
+/* Card */
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    scale: 100%;
+}
+
+.card:hover {
+    scale: 110%;
+    transition-duration: .5s;
+    z-index: 10;
+}
+
+.rate-label {
+    top: 16px;
+    margin-inline-end: 16px;
+    background-color: #F8D13B;
+    color: rgb(37, 37, 37);
+    padding: 2px 8px;
+    border-radius: 50px;
+    font-size: 10px;
+}
+
+
+
+/* Card Image */
+.card-img-overlay {
+    padding: 0;
+}
+
+.card-img {
+    transition-duration: .5s;
+    scale: 100%;
+}
+
+.card:hover .card-img {
+    transform: scale(120%);
+    transition-duration: 0.5s;
+}
+
+
+
+/* Text Container */
+.text-container {
+    background-color: aqua;
+    width: 100%;
+    padding: 0.8rem;
+    transition-duration: 0.5s;
+    background: linear-gradient(360deg, #484848 10.42%, rgba(40, 39, 39, 0) 100%);
+    backdrop-filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: -3em;
+}
+
+.card:hover .text-container {
+    background: linear-gradient(360deg, #484848 0.42%, rgba(40, 39, 39, 0) 100%);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 0px;
+}
+
+
+
+/* Text Container : Button View */
+.btn-view {
+    /* display: none; */
+    border-radius: 100px;
+    opacity: 0;
+}
+
+.card:hover .btn-view {
+    /* display: block; */
+    transition-duration: 1s;
+    opacity: 1;
+}
+
+
+
+/* Text Container : Info Label */
+.info-label {
+    opacity: 0;
+    font-size: 0.5rem;
+    margin-right: 8px;
+    color: rgb(231, 231, 231);
+    font-weight: 700;
+}
+
+.info-label img {
+    margin-right: 4px;
+    scale: 80%;
+    color: rgb(255, 255, 255);
+}
+
+.card:hover .info-label {
+    opacity: 100%;
+    transition-duration: 1.5s;
+}
+
+
+
+
+/* Modal */
+.btn-close {
+    position: absolute;
+    top: 16px;
+    margin-right: 16px;
+}
+
+
+
+/* Coming Soon  */
+.card-container {
+    padding: .5%;
+}
+
+.card-horizontal {
+    height: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .info-label {
+        display: none;
+    }
+
+    .info-label img {
+        display: none;
+    }
+
+
+}
