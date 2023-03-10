@@ -9,15 +9,15 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" cross origin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <!-- External Style -->
     <link rel="stylesheet" type="text/css" href="style.css"/>
 
 </head>
 
-<body
-    <div >
+<body>
+    <div>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light nav-transparent position-fixed w-100">
             <div class="container-fluid">
@@ -92,6 +92,14 @@
                 
             </div>
 
+        </section>
+
+        <!-- tess -->
+        <section>
+        <div class="container-fluid">tes</div>
+            <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#exampleModal">View 1</button>
+
+            <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#exampleModal2">View 2</button>
         </section>
 
 
@@ -721,6 +729,7 @@
                                 <h5 class="card-title col-12">Tenet</h5>
                                 <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
                             </div>
+                            
                         </div>
                     </div>
 
@@ -736,19 +745,202 @@
         <!-- footer -->
 
 
+
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="btn-close end-0" data-bs-dismiss="modal" aria-label="Close"></button>
-          ...
+
+    <!-- Modal 1-->
+    <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="btn-close end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+              <!-- Header Img -->
+              <div class="container-fluid d-flex container-landscape-poster">
+                <img src="./src/Poster-landscape/Interstellar-landscape.png" alt="" class="landscape-poster">
+              </div>
+              
+              <div class="container-fluid d-flex modal-content-container">
+                <!-- Container 1 : Poster -->
+                <div class="col-3">
+                    <img src="./src/regular-poster/interstellar-poster.png" alt="" class="regular-poster">
+                </div>
+                <!-- Container 2 : Description -->
+                <div class="col-6 modal-description">
+                    <h1>interstellar</h1>
+                    <span>
+                        <div class="rate-label position-absolute end-0"> Action</div>
+                        <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                        <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                    </span>
+                    <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                    <span>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Trailer</button>
+                    </span>
+                </div>
+                <!-- Actor Profile -->
+                <div class="col-3">
+                    <div class="director">
+                        <h6>Director</h6>
+                        <div class="profile-actor d-flex">
+                            <div class="col-3">
+                                <img src="./src/profile-actor/christoper Nolan.png" alt="" class="actor-profile">
+                            </div>
+                            <div class="col-9 actor-name">
+                                <h6>Christoper Nolan</h6>
+                                <span class="profile-description">Director</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actor">
+                        <h6>Cast</h6>
+                        <!-- Actor 1 -->
+                        <div class="profile-actor d-flex">
+                            <div class="col-3">
+                                <img src="./src/profile-actor/Mattew McConeghey.png" alt="" class="actor-profile">
+                            </div>
+                            <div class="col-9 actor-name">
+                                <h6>Matthew McConeghey</h6>
+                                <span class="profile-description">Cooper</span>
+                            </div>
+                        </div>
+                        <!-- Actor 2 -->
+                        <div class="profile-actor d-flex">
+                            <div class="col-3">
+                                <img src="./src/profile-actor/Anne Hathaway.png" alt="" class="actor-profile">
+                            </div>
+                            <div class="col-9 actor-name">
+                                <h6>Anne Hathaway</h6>
+                                <span class="profile-description">Brand</span>
+                            </div>
+                        </div>
+                        <!-- Actor 3 -->
+                        <div class="profile-actor d-flex">
+                            <div class="col-3">
+                                <img src="./src/profile-actor/Jessica Chastain.png" alt="" class="actor-profile">
+                            </div>
+                            <div class="col-9 actor-name">
+                                <h6>Jessica Chastain</h6>
+                                <span class="profile-description">Murph</span>
+                            </div>
+                        </div>
+                        <!-- Actor 4 -->
+                        <div class="profile-actor d-flex">
+                            <div class="col-3">
+                                <img src="./src/profile-actor/Michael Caine.png" alt="" class="actor-profile">
+                            </div>
+                            <div class="col-9 actor-name">
+                                <h6>Michael Caine</h6>
+                                <span class="profile-description">Prof. Brand</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </div>
-  </div>
+
+
+    <!-- Modal 2-->
+    <div class="modal modal-lg fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="btn-close end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+              <!-- tes -->
+              <div class="carousel-item active card bg-dark text-white card-horizontal giant-card ">
+                <!-- Image -->
+                <img src="src/Poster-landscape/Interstellar-landscape.png" class="card-img" alt="...">
+                    <!-- Overlay Content -->
+                    <div class="card-img-overlay d-flex align-items-end">
+                        <div class="container-fluid d-flex modal-content-container">
+                            <!-- Container 1 : Poster -->
+                            <div class="col-3">
+                                <img src="./src/regular-poster/interstellar-poster.png" alt="" class="regular-poster">
+                            </div>
+                            <!-- Container 2 : Description -->
+                            <div class="col-6 modal-description">
+                                <h1>interstellar</h1>
+                                <span>
+                                    <div class="rate-label position-absolute end-0"> Action</div>
+                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
+                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
+                                </span>
+                                <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                                <span>
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Trailer</button>
+                                </span>
+                            </div>
+                            <!-- Actor Profile -->
+                            <div class="col-3">
+                                <div class="director">
+                                    <h6>Director</h6>
+                                    <div class="profile-actor d-flex">
+                                        <div class="col-3">
+                                            <img src="./src/profile-actor/christoper Nolan.png" alt="" class="actor-profile">
+                                        </div>
+                                        <div class="col-9 actor-name">
+                                            <h6>Christoper Nolan</h6>
+                                            <span class="profile-description">Director</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actor">
+                                    <h6>Cast</h6>
+                                    <!-- Actor 1 -->
+                                    <div class="profile-actor d-flex">
+                                        <div class="col-3">
+                                            <img src="./src/profile-actor/Mattew McConeghey.png" alt="" class="actor-profile">
+                                        </div>
+                                        <div class="col-9 actor-name">
+                                            <h6>Matthew McConeghey</h6>
+                                            <span class="profile-description">Cooper</span>
+                                        </div>
+                                    </div>
+                                    <!-- Actor 2 -->
+                                    <div class="profile-actor d-flex">
+                                        <div class="col-3">
+                                            <img src="./src/profile-actor/Anne Hathaway.png" alt="" class="actor-profile">
+                                        </div>
+                                        <div class="col-9 actor-name">
+                                            <h6>Anne Hathaway</h6>
+                                            <span class="profile-description">Brand</span>
+                                        </div>
+                                    </div>
+                                    <!-- Actor 3 -->
+                                    <div class="profile-actor d-flex">
+                                        <div class="col-3">
+                                            <img src="./src/profile-actor/Jessica Chastain.png" alt="" class="actor-profile">
+                                        </div>
+                                        <div class="col-9 actor-name">
+                                            <h6>Jessica Chastain</h6>
+                                            <span class="profile-description">Murph</span>
+                                        </div>
+                                    </div>
+                                    <!-- Actor 4 -->
+                                    <div class="profile-actor d-flex">
+                                        <div class="col-3">
+                                            <img src="./src/profile-actor/Michael Caine.png" alt="" class="actor-profile">
+                                        </div>
+                                        <div class="col-9 actor-name">
+                                            <h6>Michael Caine</h6>
+                                            <span class="profile-description">Prof. Brand</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      
 
   <script src="./script.js"></script>
 </body>
