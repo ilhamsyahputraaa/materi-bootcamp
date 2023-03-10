@@ -1,9 +1,24 @@
 /* Navbar */
-.navbar {
-    background-color: aquamarine;
+
+.nav-color {
+    background-color: rgb(109, 109, 109);
+    z-index: 3;
+    transition-duration: 0.3s;
+
+}
+
+.nav-transparent{
+    background-color: rgba(109, 109, 109, 0);
+    transition-duration: 0.3s;
 }
 
 
+.navbar{
+    margin-bottom: -90px;
+    z-index: 3;
+}
+
+/* ==================================== */
 
 /* Header */
 .header-content {
@@ -17,7 +32,7 @@
     background-repeat: none;
 }
 
-
+/* ==================================== */
 
 /* Card Slider */
 .btn-arrow-right {
@@ -46,7 +61,7 @@
     justify-content: center;
 }
 
-
+/* ==================================== */
 
 /* Card */
 .card {
@@ -170,6 +185,9 @@
     transition-duration: 1.5s;
 }
 
+/* ==================================== */
+
+
 /* Modal */
 .btn-close {
     position: absolute;
@@ -177,6 +195,8 @@
     margin-right: 16px;
 }
 
+
+/* ==================================== */
 
 
 /* Coming Soon  */
@@ -188,8 +208,19 @@
     height: 100%;
 }
 
+
+/* ==================================== */
+
+/* Universal Selector */
+*{
+    font-family: dm sans;
+}
+
+/* ==================================== */
+
+
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .info-label {
         display: none;
     }

@@ -9,7 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" cross origin="anonymous"></script>
 
     <!-- External Style -->
     <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -19,7 +19,7 @@
 <body>
     <div >
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light nav-transparent position-fixed w-100">
             <div class="container-fluid">
                 <!-- Logo Website -->
               <a class="navbar-brand" href="#">NOLAN</a>
@@ -61,7 +61,7 @@
                             <div class="col-lg-4 col-sm-12">
                                 <h1>Ini Judul Websitenya untuk dipajang Slogan</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                <button class="">View more</button>
+                                <button type="button" class="btn btn-warning">View</button>
                             </div>
 
                         </div>
@@ -72,7 +72,7 @@
                             <div class="col-lg-6 col-sm-12">
                                 <h1>Ini Judul Websitenya untuk dipajang Slogan</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                <button class="">View more</button>
+                                <button type="button" class="btn btn-warning">View</button>
                             </div>
 
                         </div>
@@ -83,7 +83,7 @@
                             <div class="col-md-6 col-sm-12">
                                 <h1>Ini Judul Websitenya untuk dipajang Slogan</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                <button class="">View more</button>
+                                <button type="button" class="btn btn-warning">View</button>
                             </div>
 
                         </div>
@@ -738,51 +738,6 @@
 
     </div>
 
-    <div id="carouselExampleInterval" class="card-container  col-12 col-md-9 col-sm-12 carousel slide carousel-soon" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Carousel 1 -->
-                <div class="carousel-item active card bg-dark text-white card-horizontal giant-card" data-bs-interval="3000">
-                        <img src="src/Poster.png" class="card-img" alt="...">
-                            <div class="card-img-overlay d-flex align-items-end">
-                                <div class="rate-label position-absolute end-0"> Action</div>
-                                <div class="text-container" >
-                                    <div class="info-icons">
-                                        <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
-                                        <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
-                                    </div>
-                                    <h5 class="card-title col-12">Horizontal</h5>
-                                    <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
-                                </div>
-                            </div>
-                </div>
-                <!-- Carousel 1 -->
-                <div class="carousel-item active card bg-dark text-white card-horizontal giant-card" data-bs-interval="3000">
-                    <img src="src/Poster.png" class="card-img" alt="...">
-                        <div class="card-img-overlay d-flex align-items-end">
-                            <div class="rate-label position-absolute end-0"> Action</div>
-                            <div class="text-container" >
-                                <div class="info-icons">
-                                    <span class="info-label"> <img src="src/clock.svg" alt="">105 Minutes</span>
-                                    <span class="info-label"> <img src="src/eye.svg" alt="">12,7 K</span>
-                                </div>
-                                <h5 class="card-title col-12">Horizontal</h5>
-                                <button type="button" class="btn btn-warning btn-view" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
-                            </div>
-                        </div>
-                </div>
-            </div>
-
-          <!-- button -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -795,6 +750,7 @@
     </div>
   </div>
 
+  <script src="./script.js"></script>
 </body>
 
 </html>
