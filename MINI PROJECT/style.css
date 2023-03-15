@@ -330,6 +330,7 @@ p{
 .landscape-poster{
     scale: 100%;
     z-index: 0;
+    z-index: 1;
 }
 
 .regular-poster-modal{
