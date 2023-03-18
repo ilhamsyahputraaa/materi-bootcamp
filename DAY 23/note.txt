@@ -1,0 +1,20 @@
+JS HTML DOM
+
+html bagaikan pohon tebalik. 
+atas akar, bawahnya makin bercabang
+
+cara mengambil, memodif dan menghapus
+
+
+
+mencari bisa pake
+document.getElementById
+document.getElementsByClassName
+document.getElementsByTagName
+
+ID itu unik, hanya bisa dipake satu
+
+
+exercise
+
+bikin button 1 kalo diclick backgound jadi hitam, kalo diclick lagi backgroundnya jadi putih
