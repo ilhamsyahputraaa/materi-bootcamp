@@ -1,0 +1,20 @@
+Framework: template yang lebih strict
+library : bisa dikostumisasi
+
+
+bagaimana react bekerja :DOM
+1 merender ui ke virtual DOM ketika ada perubahan pada ui
+2. Mencari perbbedaan anatara previous dan current virtual DOM
+3. update perubahan real DOM
+
+bagaimana react bekerja
+reusable component
+
+
+react
++ tidak perlu mikirin DOM
++ reusable component
++ komunitas yang besar
+- hanya sebuah library
+- overkill untuk aplikasi sederhana
+- learning curve yang panjang
