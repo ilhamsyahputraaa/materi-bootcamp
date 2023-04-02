@@ -43,18 +43,24 @@
 // CLUE : hasil perkalian dibulatkan ke bawah, manfaatkan perulangan
 
 // Jawaban:
-function duckShoot(ammo, aim, ducks) {
-    let ducksArray = ducks.split('');
-    let successfulShots = 0;
-    for (let i = 0; i < ducksArray.length; i++) {
-      if (ducksArray[i] === '2' && Math.random() < aim && successfulShots < ammo) {
-        ducksArray[i] = 'X';
-        successfulShots++;
+function duckShoot(ammo, aim, duckString) {
+  let successfulShots = Math.floor(ammo * aim); // mwnghitung berapa kali tembakan akan berhasil (menggunakan mathfloor biar dibulatkan kebawah)
+  let duckArray = duckString.split(''); // mengconvert duckstring menjadi array per karakter
+  
+  // membuat perulangan dan mengganti bebek yang tertembak menjadi "x"
+  for (let i = 0; i < duckArray.length; i++) {
+    if (duckArray[i] === '2') { // kalo array ke i adalah bebek idup alias 2, maka menjalankan kondisi lagi di bawah
+      if (successfulShots > 0) { // kalao masih punya ammo atau peluru & tembakannya berhasil
+        duckArray[i] = 'X'; // ganti bebeknya jadi x alias ditandai kena tembakan
+        successfulShots--; // decrement agar nanti kesempatannya berkurang
+      } else {
+        break; // kalo ammo gak ada lagi stop loop
       }
     }
-    return ducksArray.join('');
   }
   
+  return duckArray.join(''); // ubah lagi arrayjadi string abis itutampilkan hasilnya
+}
 
 console.log(duckShoot(4, 0.64, '|~~2~~~22~2~~22~2~~~~2~~~|'));
 console.log(duckShoot(9, 0.22, '|~~~~~~~2~2~~~|')); 
