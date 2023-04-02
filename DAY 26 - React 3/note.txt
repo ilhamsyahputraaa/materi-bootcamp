@@ -1,0 +1,11 @@
+API
+- interface yang dapat menghubungkan satu aplikasi dengan aplikasi lainnya
+- perantara antar berbagai aplikasi berbeda, baik dalam satu platform yang sama ataupun lintas platform
+
+REST API
+Representational state transfer
+rest ,emggunakan JSON sebagai bentuk datanya seingga lebih ringan. performa aplikasi pun menjadi lebih baik
+
+JSON
+javascript object notation
+isinya string yang diisi objek
